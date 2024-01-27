@@ -15,11 +15,11 @@ import java.time.format.DateTimeFormatter;
 public class BaseTimeEntity {
 
     @Column(name = "created_date" , nullable = false)
-    @CreatedDate
+    @CreatedDate // 생성시 날짜 자동 생성
     private String createdDate;
 
     @Column(name = "modified_date", nullable = false)
-    @LastModifiedDate
+    @LastModifiedDate // 수정시 날짜 자동 갱신
     private String modifiedDate;
 
     // 해당 엔터티를 저장 하기 이전에 실행
